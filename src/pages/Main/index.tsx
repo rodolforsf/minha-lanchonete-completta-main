@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
 
-import { Sidebar } from '../../components/Sidebar'
+import { SideBar } from '../../components/SideBar'
 
 import { Container } from './styles'
 
@@ -9,7 +9,7 @@ import logoImg from '../../assets/logo.svg'
 export default function Main() {
   return (
     <Container>
-      <Sidebar />
+      <SideBar />
       <section>
         <img src={logoImg} />
         <Outlet />
