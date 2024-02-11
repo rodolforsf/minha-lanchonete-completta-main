@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import { Container } from "./styles";
 
@@ -24,28 +25,28 @@ export function SideBar() {
     <nav>
       <ul>
         <li>
-          <a href='#' className='active'>
+          <NavLink to='/'>
             <LancheIcon />
             <span>Lanches</span>
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href='#'>
+          <NavLink to='pizzas'>
             <PizzaIcon />
             <span>Pizzas</span>
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href='#'>
+          <NavLink to='bebidas'>
             <BebidaIcon />
             <span>Bebidas</span>
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href='#'>
+          <NavLink to='sobremesas'>
             <SobremesaIcon />
             <span>Sobremesas</span>
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>
